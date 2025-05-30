@@ -3,69 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoddessLune’s Temple 🌙✨</title>
+    <title>Kneel for GoddessLune | Tribute Portal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <header>
+        <h1>🌙 GoddessLune’s Enchanted Chamber 🌙</h1>
         <nav>
-            <ul>
-                <li><a href="#home">🌙 Home</a></li>
-                <li><a href="#about">✨ About</a></li>
-                <li><a href="#tribute">💎 Tribute Levels</a></li>
-                <li><a href="#exclusive">🔮 Exclusive Content</a></li>
-            </ul>
+            <a href="#obey">Obey</a>
+            <a href="#tribute">Tribute</a>
+            <a href="#rewards">Rewards</a>
+            <a href="#enter">Enter</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Welcome to GoddessLune’s Temple</h1>
-        <p>Your devotion begins here. Tribute to unlock mysteries.</p>
-        <button onclick="window.location='https://ko-fi.com/goddesslune'">💸 Tribute Now</button>
+    <section class="hero">
+        <h2 class="command">Kneel. Obey. Tribute.</h2>
+        <p class="subtle">
+            You are here because you crave purpose.<br>
+            Your purpose is to please <span class="goddess-name">GoddessLune</span>.
+        </p>
+        <button class="hypno" onclick="window.location='#tribute'">Tribute Now</button>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <h2>✨ About GoddessLune ✨</h2>
-        <p>I am the goddess who commands power and devotion. Surrender your tribute, and receive my grace and rituals.</p>
+    <section id="obey" class="section dark">
+        <h2>Why Serve GoddessLune?</h2>
+        <ul class="reasons">
+            <li>🔮 Feel the thrill of financial surrender</li>
+            <li>✨ Experience exclusive rituals and commands</li>
+            <li>💋 Receive direct acknowledgment from Goddess herself</li>
+            <li>🖤 Embrace your true purpose: to spoil, serve, and obey</li>
+        </ul>
     </section>
 
-    <!-- Tribute Levels -->
-    <section id="tribute" class="section tribute-levels">
-        <h2>💎 Tribute Levels 💎</h2>
-        <div class="levels">
-            <div class="level">
-                <h3>🐷 Tribute Pig - $25</h3>
-                <p>Basic rituals and tasks.</p>
+    <section id="tribute" class="section tribute">
+        <h2>Tribute Tiers</h2>
+        <div class="tiers">
+            <div class="tier" onclick="showTier('pig')">
+                <h3>🐖 Tribute Pig</h3>
+                <p>Basic ritual, affirmation task, and public thank you.<br><strong>$25</strong></p>
             </div>
-            <div class="level">
-                <h3>💫 Loyal Worshipper - $50</h3>
-                <p>Exclusive content and personal rituals.</p>
+            <div class="tier" onclick="showTier('worshipper')">
+                <h3>💎 Loyal Worshipper</h3>
+                <p>Exclusive tasks, private message, and custom ritual.<br><strong>$50</strong></p>
             </div>
-            <div class="level">
-                <h3>👑 Devoted Sub - $100</h3>
-                <p>Full access, private sessions, and personalized attention.</p>
+            <div class="tier" onclick="showTier('sub')">
+                <h3>👑 Devoted Sub</h3>
+                <p>Personalized voice message, unique ritual, direct praise.<br><strong>$100+</strong></p>
             </div>
         </div>
+        <a href="https://ko-fi.com/goddesslune" target="_blank" class="tribute-btn">Tribute at Ko-Fi</a>
     </section>
 
-    <!-- Exclusive Content -->
-    <section id="exclusive" class="section exclusive-content">
-        <h2>🔮 Exclusive Rituals 🔮</h2>
-        <p>Unlock powerful rituals and private, personalized experiences after tribute.</p>
+    <section id="rewards" class="section rewards">
+        <h2>Obedience Is Rewarded</h2>
+        <p>Only the most devoted receive:</p>
+        <ul>
+            <li>🔒 Private channels & content</li>
+            <li>👀 Attention from GoddessLune</li>
+            <li>💫 Public praise or delicious humiliation</li>
+        </ul>
     </section>
 
-    <!-- Footer -->
+    <section id="enter" class="section join">
+        <h2>Enter the Temple</h2>
+        <p>Think you’re worthy? Join my Discord and prove your devotion.</p>
+        <a href="YOUR_DISCORD_INVITE_LINK" class="discord-link" target="_blank">Enter Now</a>
+    </section>
+
     <footer>
-        <p>Follow GoddessLune:</p>
-        <a href="#">Instagram</a> | 
-        <a href="#">Twitter</a> | 
-        <a href="https://ko-fi.com/goddesslune">Ko-Fi</a>
+        <p>🌙 GoddessLune © 2024 | <a href="https://ko-fi.com/goddesslune" target="_blank">Tribute</a> | <a href="https://twitter.com/goddesslune" target="_blank">Twitter</a></p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
-
