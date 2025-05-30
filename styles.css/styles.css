@@ -1,32 +1,29 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; padding: 0; box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #1c1c1c; /* Dark background */
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #19003b, #57007f, #19003b);
     color: #fff;
-    margin-top: 50px;
+    text-align: center;
 }
 
-/* Navigation Bar */
 header {
-    background: #333;
-    padding: 10px 0;
+    background-color: rgba(0,0,0,0.3);
+    padding: 15px;
     position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 100;
+    top: 0; left: 0;
+    z-index: 10;
 }
 
 nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    list-style-type: none;
 }
 
 nav ul li {
@@ -34,147 +31,96 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffccff;
     text-decoration: none;
-    font-size: 18px;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff007f; /* Hover color */
+    color: #ffd700;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+    background-image: url('https://source.unsplash.com/1600x900/?galaxy,moon');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px #000;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    font-style: italic;
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 5px #000;
 }
 
-.hero-content button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #ff007f;
+.hero button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: linear-gradient(45deg, #ff33cc, #ff66ff);
     color: white;
     border: none;
+    border-radius: 25px;
     cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
+    transition: transform 0.3s;
 }
 
-.hero-content button:hover {
-    background-color: #ff3366;
+.hero button:hover {
+    transform: scale(1.1);
 }
 
-/* About Section */
-.about {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #222;
+.section {
+    padding: 100px 20px;
 }
 
-.about h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #ff007f;
+.about, .exclusive-content {
+    background: rgba(0, 0, 0, 0.3);
 }
 
-.about p {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    line-height: 1.8;
+.tribute-levels {
+    background: rgba(0, 0, 0, 0.4);
 }
 
-/* Tribute Levels Section */
-.tribute {
+.levels {
     display: flex;
-    justify-content: space-around;
-    padding: 50px 20px;
-    background-color: #333;
-    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.tribute-level {
-    width: 30%;
-    text-align: center;
-    background: #444;
+.level {
+    background-color: rgba(255,255,255,0.1);
+    margin: 10px;
     padding: 20px;
     border-radius: 10px;
+    width: 280px;
     transition: 0.3s;
 }
 
-.tribute-level:hover {
-    background-color: #ff007f;
-    color: white;
+.level:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-10px);
 }
 
-.tribute-level h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.tribute-level p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-/* Exclusive Content Section */
-.exclusive-content {
-    padding: 50px 20px;
-    background-color: #222;
-    text-align: center;
-}
-
-.exclusive-content h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #ff007f;
-}
-
-.exclusive-content p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-top: 20px;
-}
-
-/* Footer */
 footer {
+    background-color: rgba(0,0,0,0.6);
     padding: 20px;
-    background-color: #111;
-    text-align: center;
-}
-
-footer p {
-    color: white;
-    font-size: 1rem;
 }
 
 footer a {
-    color: #ff007f;
+    color: #ffccff;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.2rem;
+    transition: 0.3s;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #ffd700;
 }
