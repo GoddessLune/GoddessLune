@@ -50,6 +50,6 @@ This website is hosted for personal use and tribute purposes. All content is the
 
 ## Contact
 
-- **Instagram**: [@GoddessLune](https://instagram.com/goddesslune)
-- **Twitter**: [@GoddessLune](https://twitter.com/goddesslune)
+- **Instagram**: [@GoddessLune](https://instagram.com/goddesslunee)
+- **Twitter**: [@GoddessLune](https://twitter.com/goddesslunee)
 - **Ko-Fi**: [Support GoddessLune](https://ko-fi.com/goddesslune)
