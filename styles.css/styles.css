@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;600&display=swap');
 
 body {
-   
-<div class="pig-animation"></div>
- background: linear-gradient(270deg, #33004d, #55006b, #33004d);
+    background: linear-gradient(270deg, #33004d, #55006b, #33004d);
     background-size: 600% 600%;
     animation: moveBackground 20s ease infinite;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -18,12 +16,13 @@ body {
     100% {background-position: 0% 50%;}
 }
 
-
 header {
     background: rgba(32,0,40,0.95);
     text-align: center;
     padding: 1rem 0 0.5rem 0;
     box-shadow: 0 2px 12px 0 #10001a66;
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
@@ -45,7 +44,7 @@ nav a {
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    transition: color 0.2s;
+    transition: color 0.3s;
 }
 nav a:hover {
     color: #ffe880;
@@ -53,10 +52,10 @@ nav a:hover {
 
 .hero {
     padding: 80px 10vw 60px 10vw;
-    background: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
     min-height: 50vh;
     text-align: center;
-    border-bottom: 2px solid #ff7ecb3e;
+    z-index: 1;
+    position: relative;
 }
 
 .hero h2 {
@@ -101,12 +100,14 @@ nav a:hover {
 }
 .hypno:hover {
     background: linear-gradient(90deg, #ffe880 0%, #ff99cc 100%);
-    transform: scale(1.07);
+    transform: scale(1.1);
 }
 
 .section {
     padding: 48px 7vw 35px 7vw;
     background: transparent;
+    position: relative;
+    z-index: 1;
 }
 
 .dark {
@@ -160,7 +161,7 @@ nav a:hover {
     background: linear-gradient(120deg, #ffabea 0%, #ffe880 100%);
     color: #35002c;
     box-shadow: 0 8px 32px #ff99cc60;
-    transform: translateY(-7px) scale(1.04);
+    transform: translateY(-7px) scale(1.05);
 }
 
 .tribute-btn {
@@ -175,7 +176,7 @@ nav a:hover {
     margin-top: 18px;
     letter-spacing: 0.07em;
     box-shadow: 0 2px 14px #e100a755;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
+    transition: background 0.2s, transform 0.2s;
 }
 .tribute-btn:hover {
     background: linear-gradient(90deg, #ff33cc 0%, #ff99cc 100%);
@@ -202,7 +203,7 @@ nav a:hover {
     text-decoration: none;
     margin-top: 16px;
     box-shadow: 0 2px 14px #6e00a733;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
+    transition: background 0.2s, transform 0.2s;
 }
 .discord-link:hover {
     background: linear-gradient(90deg, #ffe880 0%, #ffabea 100%);
@@ -218,6 +219,8 @@ footer {
     font-size: 1.06rem;
     letter-spacing: 0.04em;
     border-top: 2px solid #ff99cc44;
+    z-index: 1;
+    position: relative;
 }
 footer a {
     color: #ffe880;
@@ -237,3 +240,4 @@ footer a:hover { color: #ff99cc; }
     pointer-events: none;
     z-index: 0;
 }
+
