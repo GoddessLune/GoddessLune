@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@600&display=swap');
+
+body {
+    background: linear-gradient(270deg, #33004d, #55006b, #33004d);
+    background-size: 600% 600%;
+    animation: moveBackground 20s ease infinite;
+    font-family: 'Playfair Display', serif;
+    color: #ffe3f3;
+    margin: 0;
+    padding: 0;
+}
+@keyframes moveBackground {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Layered Animated Backgrounds */
+.background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Money */
+.background-layer.money {
+    background: url('https://i.imgur.com/Z6XnHyj.gif') repeat top center;
+    animation: animateMoney 40s linear infinite;
+}
+
+/* Sparkles */
+.background-layer.sparkles {
+    background: url('https://i.imgur.com/Xf6kW1H.gif') repeat top center;
+    animation: animateSparkles 45s linear infinite;
+}
+
+/* Diamonds */
+.background-layer.diamonds {
+    background: url('https://i.imgur.com/WwsWTWj.gif') repeat top center;
+    animation: animateDiamonds 50s linear infinite;
+}
+
+@keyframes animateMoney {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 1000px;}
+}
+@keyframes animateSparkles {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 1200px;}
+}
+@keyframes animateDiamonds {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 800px;}
+}
