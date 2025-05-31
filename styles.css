@@ -246,3 +246,50 @@ footer a:hover {
     pointer-events: none;
     z-index: 0;
 }
+
+
+.background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Money flying */
+.background-layer.money {
+    background: url('https://media.giphy.com/media/xT9DPxggC8TB3dtDD6/giphy.gif') repeat top center;
+    animation: animateMoney 40s linear infinite;
+}
+
+/* Golden coins */
+.background-layer.coins {
+    background: url('https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif') repeat top center;
+    animation: animateCoins 45s linear infinite;
+}
+
+/* Sparkles */
+.background-layer.sparkles {
+    background: url('https://media.giphy.com/media/dZX3GYmsxTjIk/giphy.gif') repeat top center;
+    animation: animateSparkles 50s linear infinite;
+}
+
+/* Simple slow animations */
+@keyframes animateMoney {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 1000px;}
+}
+
+@keyframes animateCoins {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 1200px;}
+}
+
+@keyframes animateSparkles {
+    0% {background-position: 0 0;}
+    100% {background-position: 0 800px;}
+}
