@@ -1,4 +1,3 @@
-// Hypnotic effect for clicking tribute tiers
 function showTier(tier) {
     let msg = "";
     if (tier === "pig") {
