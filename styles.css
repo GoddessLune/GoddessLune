@@ -1,61 +1,185 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
 body {
-    background: linear-gradient(270deg, #33004d, #55006b, #33004d);
-    background-size: 600% 600%;
-    animation: moveBackground 20s ease infinite;
-    font-family: 'Playfair Display', serif;
-    color: #ffe3f3;
-    margin: 0;
-    padding: 0;
+  background: linear-gradient(270deg, #1c0028, #33004d, #1c0028);
+  background-size: 600% 600%;
+  animation: moveBackground 20s ease infinite;
+  font-family: 'UnifrakturCook', cursive;
+  color: #d9c2ff;
+  margin: 0;
+  padding: 0;
 }
 @keyframes moveBackground {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
-/* Layered Animated Backgrounds */
+/* Background layers */
 .background-layer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    opacity: 0.15;
-    pointer-events: none;
-    z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
 }
-
-/* Money */
-.background-layer.money {
-    background: url('https://i.imgur.com/Z6XnHyj.gif') repeat top center;
-    animation: animateMoney 40s linear infinite;
+.background-layer.pigs {
+  background: url('https://i.imgur.com/2YwQR29.gif') repeat;
+  animation: animatePigs 60s linear infinite;
 }
-
-/* Sparkles */
+.background-layer.candles {
+  background: url('https://i.imgur.com/0Y9E0Sn.gif') repeat center;
+  animation: animateCandles 80s linear infinite;
+}
 .background-layer.sparkles {
-    background: url('https://i.imgur.com/Xf6kW1H.gif') repeat top center;
-    animation: animateSparkles 45s linear infinite;
+  background: url('https://i.imgur.com/Z7jv1xv.gif') repeat;
+  animation: animateSparkles 100s linear infinite;
 }
 
-/* Diamonds */
-.background-layer.diamonds {
-    background: url('https://i.imgur.com/WwsWTWj.gif') repeat top center;
-    animation: animateDiamonds 50s linear infinite;
+@keyframes animatePigs {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 2000px;}
 }
-
-@keyframes animateMoney {
-    0% {background-position: 0 0;}
-    100% {background-position: 0 1000px;}
+@keyframes animateCandles {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 1500px;}
 }
 @keyframes animateSparkles {
-    0% {background-position: 0 0;}
-    100% {background-position: 0 1200px;}
+  0% {background-position: 0 0;}
+  100% {background-position: 0 3000px;}
 }
-@keyframes animateDiamonds {
-    0% {background-position: 0 0;}
-    100% {background-position: 0 800px;}
+
+header {
+  background: rgba(30, 0, 50, 0.8);
+  text-align: center;
+  padding: 1rem;
+  z-index: 1;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #bb86fc;
+  text-shadow: 0 0 15px #0ff;
+}
+
+nav a {
+  color: #77ffc1;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #b19cd9;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2rem;
+  color: #e0b3ff;
+  text-shadow: 0 0 10px #0ff;
+}
+.subtle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ccccff;
+}
+
+.hypno {
+  margin-top: 20px;
+  background: linear-gradient(90deg, #bb86fc, #6200ea);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff;
+}
+.hypno:hover {
+  background: linear-gradient(90deg, #03dac6, #3700b3);
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tiers {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.tier {
+  background: rgba(50, 0, 70, 0.9);
+  padding: 20px;
+  width: 240px;
+  border: 2px solid #6200ea;
+  border-radius: 20px;
+  color: #d1c4e9;
+  box-shadow: 0 0 10px #0ff;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.tier:hover {
+  transform: scale(1.05);
+}
+
+.tribute-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #03dac6, #3700b3);
+  padding: 12px 30px;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.tribute-btn:hover {
+  background: linear-gradient(90deg, #6200ea, #bb86fc);
+}
+
+.rewards ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+.rewards li {
+  margin: 10px 0;
+}
+
+.join a {
+  display: inline-block;
+  margin-top: 20px;
+  background: #bb86fc;
+  color: #2c003e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.join a:hover {
+  background: #03dac6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #120017;
+  color: #d9c2ff;
+}
+footer a {
+  color: #03dac6;
+  text-decoration: none;
+  margin: 0 8px;
+}
+footer a:hover {
+  text-decoration: underline;
 }
